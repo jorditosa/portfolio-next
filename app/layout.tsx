@@ -1,3 +1,6 @@
+import { orbitron } from '@/app/fonts'
+import '@/app/globals.css'
+import NavBar from "@/components/NavBar"
 import { ReactNode } from "react"
 
 interface LayoutProps {
@@ -7,10 +10,10 @@ interface LayoutProps {
 export default function RootLayout({ children }: LayoutProps)  {
 
   return (
-    <html lang="en">
-      <body>
+    <html lang="ca" className={orbitron.variable}>
+      <body className='font-orbitron'>
         <header>
-          [header]
+          <NavBar />
         </header>
         <main>
           {children}
