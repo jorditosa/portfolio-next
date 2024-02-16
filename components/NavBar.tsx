@@ -1,15 +1,23 @@
 'use client'
 
-import { MoonIcon } from '@heroicons/react/24/outline';
+import { MoonIcon, SunIcon } from '@heroicons/react/24/outline';
 import Link from "next/link";
-import { useSearchParams } from 'next/navigation';
+import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
 
 export default function NavBar() {
-  const params = useSearchParams()
-  console.log(params)
+  const searchValues: ReadonlyURLSearchParams = useSearchParams()
+  const modeParams = searchValues.get('mode')
+  const { replace } = useRouter();
+  const pathname = usePathname();
 
+  
   const handleMode = () => {
-
+    if( modeParams === 'dark' || !modeParams) {
+      replace(`${pathname}?mode=light`)
+    }
+    if( modeParams === 'light') {
+      replace(`${pathname}?mode=dark`)
+    }
   }
 
   return (
@@ -33,7 +41,7 @@ export default function NavBar() {
             onClick={handleMode}
           >
             {
-              <MoonIcon className="w-6 h-6" />
+              modeParams === 'dark' ? <MoonIcon className="w-6 h-6" /> : <SunIcon className="w-6 h-6" />
             }
           </button>
         </li>

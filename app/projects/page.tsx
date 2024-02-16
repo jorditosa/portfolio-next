@@ -1,9 +1,10 @@
+import Heading from "@/components/Heading";
 import Link from "next/link";
 
 export default function ProjectsPage() {
   return (
-    <div className="prose">
-      <h1>Personal Work</h1>
+    <div>
+      <Heading>Personal Work</Heading>
 
       <ul>
         <li>

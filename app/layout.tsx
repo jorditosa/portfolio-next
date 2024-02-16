@@ -15,7 +15,7 @@ export default function RootLayout({ children }: LayoutProps)  {
         <header>
           <NavBar />
         </header>
-        <main className='max-w-2xl mx-auto'>
+        <main className='max-w-2xl mx-auto prose'>
           {children}
         </main>
       </body>

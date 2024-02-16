@@ -1,10 +1,15 @@
-export default function StudiesPage() {
+import Heading from '@/components/Heading'
+import { getTexts } from '@/lib/readMd'
+
+export default async function StudiesPage() {
+  const content = await getTexts('studies')
+
   return (
     <>
-      <h1>Studies</h1>
-      <p>
-        Only the best indie games, reviewd for you.
-      </p>
+      <Heading>Studies</Heading>
+      
+      <div dangerouslySetInnerHTML={{ __html: content}} className='prose prose-slate'>
+      </div>
     </>
   )
 }
