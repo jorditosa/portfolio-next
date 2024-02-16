@@ -11,11 +11,11 @@ export default function RootLayout({ children }: LayoutProps)  {
 
   return (
     <html lang="ca" className={orbitron.variable}>
-      <body className='font-orbitron'>
+      <body className='font-orbitron p-4'>
         <header>
           <NavBar />
         </header>
-        <main>
+        <main className='max-w-2xl mx-auto'>
           {children}
         </main>
       </body>
