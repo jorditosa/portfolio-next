@@ -12,10 +12,10 @@ export default function NavBar() {
 
   
   const handleMode = () => {
-    if( modeParams === 'dark' || !modeParams) {
+    if( modeParams === 'dark' ) {
       replace(`${pathname}?mode=light`)
     }
-    if( modeParams === 'light') {
+    if( modeParams === 'light' || !modeParams) {
       replace(`${pathname}?mode=dark`)
     }
   }
@@ -41,7 +41,7 @@ export default function NavBar() {
             onClick={handleMode}
           >
             {
-              modeParams === 'dark' ? <MoonIcon className="w-6 h-6" /> : <SunIcon className="w-6 h-6" />
+              modeParams === 'dark' ? <MoonIcon className="w-7 h-7" /> : <SunIcon className="w-7 h-7" />
             }
           </button>
         </li>
