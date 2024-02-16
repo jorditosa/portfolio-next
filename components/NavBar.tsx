@@ -1,7 +1,17 @@
+'use client'
+
 import { MoonIcon } from '@heroicons/react/24/outline';
 import Link from "next/link";
+import { useSearchParams } from 'next/navigation';
 
 export default function NavBar() {
+  const params = useSearchParams()
+  console.log(params)
+
+  const handleMode = () => {
+
+  }
+
   return (
     <nav className="mt-2 mb-8 max-w-2xl mx-auto bg-orange-50/10 border-2 border-orange-200 shadow-lg rounded-full">
       <ul className="flex justify-around items-center">
@@ -19,11 +29,13 @@ export default function NavBar() {
           <Link href='/projects'>Personal work</Link>
         </li>
         <li className="py-2">
-          <Link href='#'>
+          <button 
+            onClick={handleMode}
+          >
             {
               <MoonIcon className="w-6 h-6" />
             }
-          </Link>
+          </button>
         </li>
       </ul>
     </nav>
