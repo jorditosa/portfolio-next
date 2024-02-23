@@ -11,7 +11,7 @@ export default function NavBar() {
     <RoundedNav>
       <ul className="h-48 flex font-semibold text-xs lg:text-xl">
         <li className="py-2 flex-1 cursor-pointer gap-12 text-lg bg-gradient-to-t from-customRed dark:to-slate-950 hover:text-2xl transition-all duration-100 ease-linear">
-          <Link href='/' className='h-full flex flex-col items-center justify-end gap-12'  >
+          <Link href='/' className='h-full flex flex-col items-center justify-end gap-12'>
              <p className='-rotate-90'>Hello!</p>
              <HomeIcon className="w-10" />
           </Link>
@@ -36,6 +36,7 @@ export default function NavBar() {
           </Link>
         </li>
         <ThemeToggle />
+         
       </ul>
     </RoundedNav>
   )

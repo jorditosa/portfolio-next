@@ -2,8 +2,8 @@ import Heading from "../../../components/Heading";
 import { getTexts } from "../../../lib/readMd";
 
 
-export default async function ProjectPage() {
-  const content = await getTexts('projects/deporunners')
+export default async function ProjectPage({ params: { slug } }) {
+  const content = await getTexts(`projects/${slug}`)
 
   return (
      <section>
