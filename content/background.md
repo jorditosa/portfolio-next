@@ -1,7 +1,17 @@
 ## Netquest Soluciones Tecnológicas SL
 
-Como junior software developer, mi trabajo es principalmente en el frontend del portal web y realización de soportes para landings y emails.
+**2023 - current**
+
+As a junior software developer, my work mainly involves the frontend of the web portal and the creation of supports for landings and emails.
 
 ## Monday Office Advisors SL
 
-En el departamento laboral, me encargaba de la maquetación de las páginas web de los servicios, y creación de herramientas de gestión laboral, como calculadoras de pagos, subsidios, etc.
+**2018 - 2023**
+
+In the labor department, I was responsible for the layout of the web pages for services and the creation of labor management tools, such as payment calculators, subsidies, etc.
+
+## Akuaro Network Solutions
+
+**2017 - 2018**
+
+As an IT profiles recruiter, my profession involved searching, interviewing, and recruiting professionals in the technology sector according to client requirements.

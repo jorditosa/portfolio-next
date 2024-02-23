@@ -6,7 +6,7 @@ export default async function BackgroundPage() {
   return (
     <section>
       <Heading>Professional career</Heading>
-      <div dangerouslySetInnerHTML={{ __html: content}} className='prose prose-slate'>
+      <div dangerouslySetInnerHTML={{ __html: content}}>
       </div>
     </section>
   )

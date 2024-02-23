@@ -5,11 +5,11 @@ export default async function StudiesPage() {
   const content = await getTexts('studies')
 
   return (
-    <>
+    <section>
       <Heading>Studies</Heading>
       
-      <div dangerouslySetInnerHTML={{ __html: content}} className='prose prose-slate'>
+      <div dangerouslySetInnerHTML={{ __html: content}}>
       </div>
-    </>
+    </section>
   )
 }
