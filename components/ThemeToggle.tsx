@@ -30,12 +30,12 @@ const ThemeToggle = () => {
   }, [darkMode])
 
   return (
-    <li className="py-2 flex-1 cursor-pointer flex items-center justify-center bg-gradient-to-t from-customRed/50 dark:to-slate-900">
+    <li className="py-2 flex-1 cursor-pointer flex items-center justify-center bg-gradient-to-t from-customRed/50 dark:to-slate-950">
       <button
         onClick={() => setDarkMode(!darkMode)}
       >
         {
-          darkMode ? <MoonIcon className="w-10 h-full" title='dark' /> : <SunIcon className="w-10 h-full" title='light' />
+          darkMode ? <MoonIcon className="w-12 h-full" title='dark' /> : <SunIcon className="w-12 h-full" title='light' />
         }
       </button>
     </li>

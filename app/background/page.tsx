@@ -1,5 +1,5 @@
-import Heading from '@/components/Heading'
-import { getTexts } from '@/lib/readMd'
+import Heading from '../../components/Heading'
+import { getTexts } from '../../lib/readMd'
 
 export default async function BackgroundPage() {
   const content = await getTexts('background')

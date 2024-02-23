@@ -1,5 +1,5 @@
-import RoundedNav from "@/components/RoundedBox";
 import { LinkIcon } from '@heroicons/react/24/outline';
+import RoundedNav from '../../components/RoundedBox';
 
 
 const Links = () => {

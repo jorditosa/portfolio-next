@@ -1,4 +1,4 @@
-import { getTexts } from "@/lib/readMd";
+import { getTexts } from "../lib/readMd";
 import Links from "./ui/Links";
 import LottieHome from "./ui/LottieHome";
 
