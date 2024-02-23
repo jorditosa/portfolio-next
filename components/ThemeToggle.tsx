@@ -30,7 +30,7 @@ const ThemeToggle = () => {
   }, [darkMode])
 
   return (
-    <li className="h-100 py-1 flex items-center px-4 bg-gradient-to-b from-customRed to-white">
+    <li className="py-2 flex-1 cursor-pointer flex items-center justify-center bg-gradient-to-t from-customRed/50 dark:to-slate-900">
       <button
         onClick={() => setDarkMode(!darkMode)}
       >

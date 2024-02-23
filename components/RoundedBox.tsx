@@ -2,7 +2,7 @@
 
 const RoundedNav = ({children}) => {
   return (
-    <nav className="mt-2 mb-8 max-w-2xl mx-auto bg-orange-50/10 border-4 border-customRed rounded-full">
+    <nav className="block h-full mx-auto mb-8 max-w-2xl">
       {children}
     </nav>
   )
