@@ -1,10 +1,10 @@
-import GitHubProvider, { GithubProfile } from "next-auth/providers/github";
+import GitHubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 
 export const options = {
   providers: [
     GitHubProvider({
-      profile(profile: GithubProfile) {
+      profile(profile) {
         console.log("Profile Github: ", profile)
 
         const userRole = profile?.email === "jordisato88@gmail.com" ? "admin" : "Github User";
@@ -17,7 +17,7 @@ export const options = {
       clientId: process.env.GITHUB_ID,
       clientSecret: process.env.GITHUB_SECRET
     }),
-   GoogleProvider({
+    GoogleProvider({
       profile(profile) {
         console.log("Profile Google: ", profile);
 
@@ -34,14 +34,14 @@ export const options = {
     })
   ],
   callbacks: {
-    async jwt({token, user}) {
-      if(user) token.role = user.role
+    async jwt({ token, user }) {
+      if (user) token.role = user.role
       return token
     },
-    async session({session, token}) {
-      if(session?.user) session.user.role = token.role
+    async session({ session, token }) {
+      if (session?.user) session.user.role = token.role
       return session
-  }
+    }
   }
 }
 
