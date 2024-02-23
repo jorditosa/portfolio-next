@@ -1,16 +1,13 @@
-import GitHubProvider from "next-auth/providers/github";
+import GitHubProvider, { GithubProfile } from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 
 export const options = {
   providers: [
     GitHubProvider({
-      profile(profile) {
+      profile(profile: GithubProfile) {
         console.log("Profile Github: ", profile)
 
-        let userRole = "Github User"
-        if (profile?.email === "jordisato88@gmail.com") {
-          userRole = "admin"
-        }
+        const userRole = profile?.email === "jordisato88@gmail.com" ? "admin" : "Github User";
 
         return {
           ...profile,
@@ -23,6 +20,8 @@ export const options = {
    GoogleProvider({
       profile(profile) {
         console.log("Profile Google: ", profile);
+
+        const userRole = "Google User";
 
         return {
           ...profile,
