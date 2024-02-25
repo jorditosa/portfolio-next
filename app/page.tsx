@@ -1,15 +1,16 @@
 import { getServerSession } from "next-auth";
 import Image from "next/image";
-import { AiOutlineSmile } from "react-icons/ai";
 import { getTexts } from "../lib/readMd";
-import { options } from "./api/auth/[...nextauth]/options";
+import { options } from "./api/auth/[...nextauth]/options_examples";
 import Links from "./ui/Links";
 import LottieHome from "./ui/LottieHome";
+import Technologies from "./ui/Technologies";
+
 
 
 export default async function HomePage() {
   const content = await getTexts('home')
-  const session = await getServerSession(options)
+  const session = await getServerSession<any>(options)
 
   return (
     <>
@@ -23,19 +24,16 @@ export default async function HomePage() {
           alt="personal picture"
           className="rounded-full border-4 border-customRed"
           />
-          <p className="flex items-center gap-2">
-            Logged you can view my pic 
-            <AiOutlineSmile className="w-8 h-8" />
-          </p>
         </figure>
         : null
     }
     <div dangerouslySetInnerHTML={{ __html: content}}>
     </div>
 
-      <LottieHome />
-
-      <Links />
+    
+    <Technologies />
+    <LottieHome />
+    <Links />
     </>
   )
 }

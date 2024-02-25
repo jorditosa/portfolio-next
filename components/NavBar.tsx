@@ -2,12 +2,12 @@ import { AiOutlineHome, AiOutlineLaptop, AiOutlineLogin, AiOutlineLogout, AiOutl
 
 import { getServerSession } from "next-auth";
 import Link from "next/link";
-import { options } from "../app/api/auth/[...nextauth]/options";
+import { options } from "../app/api/auth/[...nextauth]/options_examples";
 import RoundedNav from "./RoundedBox";
 import ThemeToggle from "./ThemeToggle";
 
 export default async function NavBar() {
-  const session = await getServerSession(options)
+  const session = await getServerSession<any>(options)
 
   return (
     <RoundedNav>

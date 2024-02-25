@@ -1,10 +1,15 @@
 import GitHubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 
+
 export const options = {
+  session: {
+    strategy: "jwt",
+    maxAge: 30 * 24 * 60 * 60
+  },
   providers: [
     GitHubProvider({
-      profile(profile) {
+      profile(profile: any) {
         console.log("Profile Github: ", profile)
 
         const userRole = profile?.email === "jordisato88@gmail.com" ? "admin" : "Github User";
