@@ -9,8 +9,6 @@ interface Props {
 
 
 export default function Project({content, slug} : Props) {
-
-
     return (
         <section>
         <Heading title={`Project ${slug}`} backBtn={true} />
