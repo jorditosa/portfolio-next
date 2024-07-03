@@ -2,7 +2,8 @@
 
 **2023 - current**
 
-As a junior software developer, my work mainly involves the frontend of the web portal and the creation of supports for landings and emails.
+As a junior software developer, my work mainly involves the frontend of the web portal and the resolution of support tickets involving some bugs, emails, landings and other internal issues.
+Also, working on **AWS** to control of buckets and pipelines needed in my everyday job.
 
 ## Monday Office Advisors SL
 

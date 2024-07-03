@@ -2,7 +2,7 @@
 
 const RoundedNav = ({children}) => {
   return (
-    <nav className="block mb-8 h-full mx-auto max-w-2xl">
+    <nav className="block mb-8 h-full mx-auto w-full overflow-hidden">
       {children}
     </nav>
   )

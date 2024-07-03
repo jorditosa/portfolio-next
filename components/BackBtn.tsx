@@ -8,9 +8,9 @@ const BackBtn = () => {
   const router = useRouter()
   return (
     <button
-      className='flex-1 flex justify-end text-slate-950 dark:text-slate-50'
+      className='flex-1 flex max-w-12 justify-end text-slate-950 dark:text-slate-50'
       onClick={() => router.back()}>
-        <AiOutlineRollback className="w-10" />
+        <AiOutlineRollback size={40}/>
     </button>
   )
 }

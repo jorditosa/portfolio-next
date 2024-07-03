@@ -5,6 +5,17 @@
 
 Master applied to learn and focus to be able to build websites, from a frontend specialization, also including basic knowledge on backend and databases, being able to create a complete fullstack solution.
 
+---
+
+## Master Web and App development
+### Universitat Oberta de Catalunya
+
+**2022 - 2024**
+
+Master applied to learn and focus to be able to build websites, from a frontend specialization, also including basic knowledge on backend and databases, being able to create a complete fullstack solution.
+
+---
+
 ## Bussiness science diploma
 ### Universitat de Barcelona
 
