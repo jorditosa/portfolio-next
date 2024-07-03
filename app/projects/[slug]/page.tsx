@@ -9,6 +9,8 @@ export default async function ProjectPage({ params }: Props ) {
   const content = getMDMetadata(params.slug)
 
   return (
-    <Project content={content} slug={params.slug} />
+    <article>
+      <Project content={content} slug={params.slug} />
+    </article>
   )
 }
