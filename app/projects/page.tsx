@@ -17,6 +17,12 @@ export default async function ProjectsPage() {
           </Link>
         </li>
         <li className="text-xl">
+          <Link href={`/projects/takespai`} className="flex items-center gap-6 no-underline hover:text-blue-700">
+            <AiOutlineLaptop className="w-8 h-8" />
+            Takespai Ecommerce
+          </Link>
+        </li>
+        <li className="text-xl">
           <Link href={`/projects/cursacolls`} className="flex items-center gap-6 no-underline hover:text-blue-700">
             <AiOutlineLaptop className="w-8 h-8" />
             Cursa dels Colls Website

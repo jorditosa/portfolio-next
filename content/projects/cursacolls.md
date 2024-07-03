@@ -15,4 +15,10 @@ The tehcnical points for that project are:
 
 </div>
 
+<div class="flex justify-between gap-8 max-h-24">
+
+  ![Desktop image](/img/cursa2.png "Home page")
+
+</div>
+
 ---
