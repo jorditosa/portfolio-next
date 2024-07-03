@@ -12,11 +12,11 @@ export default async function HomePage() {
 
   return (
     <section>
+      <LottieHome />
       <div dangerouslySetInnerHTML={{ __html: content }}>
       </div>
 
       <Technologies />
-      <LottieHome />
       <Links />
     </section>
   )

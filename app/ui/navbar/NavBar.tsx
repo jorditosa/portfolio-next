@@ -4,6 +4,7 @@ import { getServerSession } from "next-auth";
 import Link from "next/link";
 import RoundedNav from "../../../components/RoundedBox";
 import ThemeToggle from "../../../components/ThemeToggle";
+import LanguageToggle from "../../../components/LanguageToggle";
 
 export default async function NavBar() {
 
@@ -53,8 +54,7 @@ export default async function NavBar() {
         } */}
         <li className="h-full py-2 flex-1 gap-4 cursor-pointer text-lg bg-gradient-to-t from-blue-500/25 dark:to-slate-950 hover:text-xl transition-all duration-100 ease-linear flex flex-col md:flex-row items-center justify-end md:justify-center">
           <ThemeToggle />
-          <AiOutlineTranslation size={40} className="cursor-pointer" />
-
+          <LanguageToggle />
         </li>
       </ul>
     </RoundedNav>

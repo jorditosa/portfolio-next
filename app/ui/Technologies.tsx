@@ -1,21 +1,34 @@
-import { TbBrandCss3, TbBrandFigma, TbBrandHtml5, TbBrandJavascript, TbBrandNextjs, TbBrandNodejs, TbBrandReact, TbBrandSass, TbBrandTailwind, TbBrandVercel, TbDeviceMobileCode, TbSql } from "../../components/Icons"
+import Heading from "../../components/Heading"
+import { SiNetlify, SiAmazonec2, SiAmazonaws, SiAwslambda, SiJavascript, SiReact, SiNextdotjs, SiNodedotjs, SiHtml5, SiCss3, SiMysql, SiSass, SiIonic, SiTailwindcss, SiDocker } from "react-icons/si";
 
 const Technologies = () => {
   return (
-    <div className="flex flex-wrap items-center gap-4">
-      <TbBrandFigma className="w-10 h-10" title="Figma" />
-      <TbBrandJavascript className="w-10 h-10" title="Javascript" />
-      <TbBrandReact className="w-10 h-10" title="React" />
-      <TbBrandNextjs className="w-10 h-10" title="Next.js" />
-      <TbBrandCss3 className="w-10 h-10" title="CSS" />
-      <TbBrandHtml5 className="w-10 h-10" title="HTML" />
-      <TbBrandSass className="w-10 h-10" title="SASS" />
-      <TbBrandTailwind className="w-10 h-10" title="Tailwind" />
-      <TbDeviceMobileCode className="w-10 h-10" title="Mobile development" />
-      <TbBrandNodejs className="w-10 h-10" title="Node.js" />
-      <TbSql className="w-10 h-10" title="SQL" />
-      <TbBrandVercel className="w-10 h-10" title="Vercel" />
-    </div>
+    <section>
+      <Heading title={'Web technologies'} backBtn={false}/>
+      <div className="flex flex-wrap items-center gap-4 mb-6">
+        <SiJavascript className="w-10 h-10" title="Javascript" />
+        <SiReact className="w-10 h-10" title="React" />
+        <SiNextdotjs className="w-10 h-10" title="Next.js" />
+        <SiCss3 className="w-10 h-10" title="CSS" />
+        <SiHtml5 className="w-10 h-10" title="HTML" />
+        <SiSass className="w-10 h-10" title="SASS" />
+        <SiTailwindcss className="w-10 h-10" title="Tailwind" />
+        <SiIonic className="w-10 h-10" title="Mobile Ionic" />
+        <SiNodedotjs className="w-10 h-10" title="Node.js" />
+        <SiMysql className="w-10 h-10" title="MySQL" />
+        <SiDocker className="w-10 h-10" title="Docker" />
+
+      </div>
+
+      <Heading title={'Cloud technologies'} backBtn={false} />
+      <div className="flex flex-wrap items-center gap-4 mb-6">
+        <SiAmazonaws className="w-10 h-10" title="AWS" />
+        <SiAmazonec2 className="w-10 h-10" title="EC2" />
+        <SiAwslambda className="w-10 h-10" title="Lambda" />
+        <SiNetlify className="w-10 h-10" title="Netlify" />
+      </div>
+
+    </section>
   )
 }
 export default Technologies

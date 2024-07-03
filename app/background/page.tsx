@@ -5,7 +5,7 @@ export default async function BackgroundPage() {
   const content = await getTexts('background')
   return (
     <section>
-      <Heading>Professional career</Heading>
+      <Heading title='Professional career' backBtn={true} />
       <div dangerouslySetInnerHTML={{ __html: content}}>
       </div>
     </section>

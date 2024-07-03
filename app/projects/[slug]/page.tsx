@@ -7,7 +7,7 @@ export default async function ProjectPage({ params: { slug } }) {
 
   return (
      <section>
-      <Heading> </Heading>
+      <Heading title={`Project ${slug}`} backBtn={true} />
       <div dangerouslySetInnerHTML={{ __html: content}}></div>
     </section>
   )

@@ -7,7 +7,7 @@ export default async function StudiesPage() {
 
   return (
     <section>
-      <Heading>Studies</Heading>
+      <Heading title='Studies' backBtn={true} />
       
       <div dangerouslySetInnerHTML={{ __html: content}}></div>
     </section>
