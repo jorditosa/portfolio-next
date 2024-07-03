@@ -42,7 +42,7 @@ export default function ProjectList() {
                 {scripts.map(script => (
                     <li key={script.slug} className="text-xl flex items-center gap-4">
                         <TiChevronRightOutline size={38} />
-                        <Link href={`/project/${script.slug}`} className="flex items-center gap-6 no-underline hover:text-blue-700">
+                        <Link href={`/${script.slug}`} className="flex items-center gap-6 no-underline hover:text-blue-700">
                             {script.icon}
                             {script.name}
                         </Link>
