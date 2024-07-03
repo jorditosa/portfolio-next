@@ -8,7 +8,6 @@ export default function ProjectList() {
 
     return (
         <nav>
-
             <ul>
                 <Heading title="Fullstack Apps" backBtn={false} />
                 <li className="text-xl">

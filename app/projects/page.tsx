@@ -10,7 +10,6 @@ export default async function ProjectsPage() {
 
       <ProjectList />
 
-     
     </div>
   )
 }
