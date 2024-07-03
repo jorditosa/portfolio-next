@@ -1,16 +1,16 @@
 "use client"
 
 import { useRouter } from "next/navigation";
-import { AiOutlineRollback } from "react-icons/ai";
+import { TiChevronLeft } from "react-icons/ti";
 
 
 const BackBtn = () => {
   const router = useRouter()
   return (
     <button
-      className='flex-1 flex max-w-12 justify-end text-slate-950 dark:text-slate-50'
+      className='flex-1 flex max-w-20 justify-center text-slate-950 dark:text-slate-50 border-4 border-blue-500 rounded-full'
       onClick={() => router.back()}>
-        <AiOutlineRollback size={40}/>
+        <TiChevronLeft size={40}/>
     </button>
   )
 }
