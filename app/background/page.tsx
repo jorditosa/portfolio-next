@@ -1,13 +1,16 @@
+import Markdown from 'markdown-to-jsx'
 import Heading from '../../components/Heading'
-import { getTexts } from '../../lib/readMd'
+import { getMDMetadata } from '../../lib/readMd'
 
 export default async function BackgroundPage() {
-  const content = await getTexts('background')
+  const content = getMDMetadata('background')
+
   return (
     <section>
       <Heading title='Professional career' backBtn={true} />
-      <div dangerouslySetInnerHTML={{ __html: content}}>
-      </div>
+      <Markdown>
+        {content}
+      </Markdown>
     </section>
   )
 }

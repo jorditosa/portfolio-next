@@ -1,20 +1,21 @@
-import { getServerSession } from "next-auth";
 import Image from "next/image";
-import { getTexts } from "../lib/readMd";
+import { getMDMetadata } from "../lib/readMd";
 import Links from "./ui/Links";
 import LottieHome from "./ui/LottieHome";
 import Technologies from "./ui/Technologies";
+import Markdown from "markdown-to-jsx";
 
 
 
 export default async function HomePage() {
-  const content = await getTexts('home')
+  const content = getMDMetadata('home')
 
   return (
     <section>
       <LottieHome />
-      <div dangerouslySetInnerHTML={{ __html: content }}>
-      </div>
+      <Markdown>
+        {content}
+      </Markdown>
 
       <Technologies />
       <Links />

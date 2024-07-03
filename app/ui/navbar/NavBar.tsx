@@ -52,9 +52,9 @@ export default async function NavBar() {
               </Link>
             </li>
         } */}
-        <li className="h-full py-2 flex-1 gap-4 cursor-pointer bg-gradient-to-t from-blue-500/25 dark:to-slate-950 hover:text-xl duration-100 ease-linear flex flex-col md:flex-row items-center justify-end md:justify-center">
+        <li className="h-full py-2 flex-1 gap-4 cursor-pointer bg-gradient-to-t from-blue-500/25 dark:to-slate-950 hover:text-xl duration-100 ease-linear flex flex-col md:flex-row items-center justify-center">
           <ThemeToggle />
-          <LanguageToggle />
+          {/* <LanguageToggle /> */}
         </li>
       </ul>
     </RoundedNav>

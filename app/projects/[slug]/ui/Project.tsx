@@ -1,5 +1,6 @@
 'use client'
 
+import Markdown from "markdown-to-jsx";
 import Heading from "../../../../components/Heading"
 
 interface Props {
@@ -12,7 +13,9 @@ export default function Project({content, slug} : Props) {
     return (
         <section>
         <Heading title={`Project ${slug}`} backBtn={true} />
-        <div dangerouslySetInnerHTML={{ __html: content}}></div>
+        <Markdown>
+            {content}
+        </Markdown>
       </section>
     )
 }
