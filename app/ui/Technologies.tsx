@@ -1,5 +1,5 @@
 import Heading from "../../components/Heading"
-import { SiNetlify, SiAmazonec2, SiAmazonaws, SiAwslambda, SiJavascript, SiReact, SiNextdotjs, SiNodedotjs, SiHtml5, SiCss3, SiMysql, SiSass, SiIonic, SiTailwindcss, SiDocker } from "react-icons/si";
+import { SiNetlify, SiAmazonec2, SiAmazonaws, SiAwslambda, SiJavascript, SiReact, SiNextdotjs, SiNodedotjs, SiHtml5, SiCss3, SiMysql, SiSass, SiIonic, SiTailwindcss, SiDocker, SiGit } from "react-icons/si";
 
 const Technologies = () => {
   return (
@@ -15,6 +15,7 @@ const Technologies = () => {
         <SiTailwindcss className="w-10 h-10" title="Tailwind" />
         <SiIonic className="w-10 h-10" title="Mobile Ionic" />
         <SiNodedotjs className="w-10 h-10" title="Node.js" />
+        <SiGit className="w-10 h-10" title="Git" />
         <SiMysql className="w-10 h-10" title="MySQL" />
         <SiDocker className="w-10 h-10" title="Docker" />
 
