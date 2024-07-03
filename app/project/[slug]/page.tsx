@@ -10,7 +10,8 @@ export async function generateStaticParams() {
     { slug: 'cursacolls'},
     { slug: 'takespai'},
     { slug: 'deporunners'},
-    { slug: 'network-analyzer'}
+    { slug: 'network-analyzer'},
+    { slug: 'openai'}
   ]
 }
 

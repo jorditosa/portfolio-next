@@ -13,7 +13,7 @@ const webProjects = [
 
 const scripts = [
     { slug: 'network-analyzer', icon: <AiOutlineCode className="w-8 h-8" />, name: 'Python Network analyzer' },
-   
+    { slug: 'openai', icon: <AiOutlineCode className="w-8 h-8" />, name: 'OpenAI chatbot with gpt-3.5' },
 ];
 
 
