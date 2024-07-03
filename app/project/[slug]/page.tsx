@@ -6,11 +6,12 @@ interface Props {
 }
 
 export default async function ProjectPage({ params }: Props ) {
-  const content = getMDMetadata(params.slug)
+  const {slug} = params
+  const content = getMDMetadata(slug)
 
   return (
     <article>
-      <Project content={content} slug={params.slug} />
+      <Project content={content} slug={slug} />
     </article>
   )
 }
