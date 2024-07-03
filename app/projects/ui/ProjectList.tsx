@@ -4,30 +4,32 @@ import Link from "next/link";
 import { AiOutlineLaptop, AiOutlineMobile, AiOutlineCode } from "react-icons/ai";
 import Heading from "../../../components/Heading";
 
+const webProjects = [
+    { slug: 'deporunners', icon: <AiOutlineMobile className="w-8 h-8" />, name: 'Deporunners App' },
+    { slug: 'takespai', icon: <AiOutlineLaptop className="w-8 h-8" />, name: 'Takespai Ecommerce' },
+    { slug: 'cursacolls', icon: <AiOutlineLaptop className="w-8 h-8" />, name: 'Cursa dels Colls Website' }
+];
+
+const scripts = [
+    { slug: 'network-analyzer', icon: <AiOutlineCode className="w-8 h-8" />, name: 'Python Network analyzer' },
+   
+];
+
+
 export default function ProjectList() {
 
     return (
-        <nav>
+        <>
             <ul>
                 <Heading title="Fullstack Apps" backBtn={false} />
-                <li className="text-xl">
-                    <Link href={`/projects/deporunners`} className="flex items-center gap-6 no-underline hover:text-blue-700">
-                        <AiOutlineMobile className="w-8 h-8" />
-                        Deporunners App
-                    </Link>
-                </li>
-                <li className="text-xl">
-                    <Link href={`/projects/takespai`} className="flex items-center gap-6 no-underline hover:text-blue-700">
-                        <AiOutlineLaptop className="w-8 h-8" />
-                        Takespai Ecommerce
-                    </Link>
-                </li>
-                <li className="text-xl">
-                    <Link href={`/projects/cursacolls`} className="flex items-center gap-6 no-underline hover:text-blue-700">
-                        <AiOutlineLaptop className="w-8 h-8" />
-                        Cursa dels Colls Website
-                    </Link>
-                </li>
+                {webProjects.map(project => (
+                    <li key={project.slug} className="text-xl">
+                        <Link href={`/projects/${project.slug}`} className="flex items-center gap-6 no-underline hover:text-blue-700">
+                            {project.icon}
+                            {project.name}
+                        </Link>
+                    </li>
+                ))}
 
             </ul>
 
@@ -35,13 +37,15 @@ export default function ProjectList() {
                 <Heading title="Personal Scripts" backBtn={false} />
 
 
-                <li className="text-xl">
-                    <Link href={`/projects/network-analyzer`} className="flex items-center gap-6 no-underline hover:text-blue-700">
-                        <AiOutlineCode className="w-8 h-8" />
-                        Python Network analyzer
-                    </Link>
-                </li>
+                {scripts.map(script => (
+                    <li key={script.slug} className="text-xl">
+                        <Link href={`/projects/${script.slug}`} className="flex items-center gap-6 no-underline hover:text-blue-700">
+                            {script.icon}
+                            {script.name}
+                        </Link>
+                    </li>
+                ))}
             </ul>
-        </nav>
+        </>
     )
 }

@@ -52,7 +52,8 @@ export default async function NavBar() {
               </Link>
             </li>
         } */}
-        <li className="h-full py-2 flex-1 gap-4 cursor-pointer bg-gradient-to-t from-blue-500/25 dark:to-slate-950 hover:text-xl duration-100 ease-linear flex flex-col md:flex-row items-center justify-center">
+        <li className="h-full w-full py-2 flex-1 cursor-pointer bg-gradient-to-t from-blue-950/25 dark:to-slate-950 hover:text-xl duration-100 ease-linear flex flex-col items-center justify-center gap-8">
+          <p className='-rotate-6'>Theme</p>
           <ThemeToggle />
           {/* <LanguageToggle /> */}
         </li>
