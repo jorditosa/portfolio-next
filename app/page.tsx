@@ -13,12 +13,14 @@ export default async function HomePage() {
   return (
     <section>
       <LottieHome />
+
+      <Links />
+
       <Markdown>
         {content}
       </Markdown>
 
       <Technologies />
-      <Links />
     </section>
   )
 }

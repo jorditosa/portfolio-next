@@ -2,6 +2,7 @@ import { ReactNode } from "react"
 import { roboto } from '../app/fonts'
 import NavBar from "./ui/navbar/NavBar"
 import './globals.css'
+import Footer from "./ui/footer/Footer"
 
 interface LayoutProps {
   children: ReactNode
@@ -16,6 +17,8 @@ export default function RootLayout({ children }: LayoutProps) {
         <main className='px-4 md:p-0 max-w-4xl mx-auto prose dark:prose-invert'>
           {children}
         </main>
+
+        <Footer />
       </body>
     </html>
   )

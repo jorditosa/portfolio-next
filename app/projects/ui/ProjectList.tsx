@@ -21,8 +21,9 @@ export default function ProjectList() {
 
     return (
         <>
-            <ul>
+            <ul className="p-0">
                 <Heading title="Fullstack Apps" backBtn={false} />
+                <p>Here some web development projects, including client and server sides development.</p>
                 {webProjects.map(project => (
                     <li key={project.slug} className="text-xl flex items-center gap-4">
                         <TiChevronRightOutline size={38} />
@@ -35,8 +36,9 @@ export default function ProjectList() {
 
             </ul>
 
-            <ul>
+            <ul className="p-0">
                 <Heading title="Personal Scripts" backBtn={false} />
+                <p>Here you are some scripts, based on class and functions, developed with python and proper conda environments.</p>
 
 
                 {scripts.map(script => (
