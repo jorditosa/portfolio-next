@@ -7,7 +7,7 @@ interface Props {
 
 export default async function ProjectPage({ params }: Props ) {
   const {slug} = params
-  const content = getMDMetadata(slug)
+  const content = await getMDMetadata(slug)
 
   return (
     <article>
