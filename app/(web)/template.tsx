@@ -1,9 +1,9 @@
 'use client'
 import React, { useEffect } from 'react'
-import { animateFadeOut, animatePageIn } from '../lib/animations'
+import { animateFadeOut, animatePageIn } from '../../lib/animations'
 import { usePathname, useRouter } from 'next/navigation'
 import Lottie from 'lottie-react'
-import loading from "../public/loffties/loading.json";
+import loading from "../../public/loffties/loading.json";
 
 
 function Template({ children }: { children: React.ReactNode }) {

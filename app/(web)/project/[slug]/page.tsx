@@ -1,4 +1,4 @@
-import { getMDMetadata } from "../../../lib/readMd";
+import { getMDMetadata } from "@/lib/readMd";
 import Project from "./ui/Project";
 
 interface Props {

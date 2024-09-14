@@ -9,13 +9,13 @@ The tehcnical points for that project are:
 - Reusable components
 - Responsive design
 
-<div class="flex justify-between gap-8 max-h-24">
+<div className="flex justify-between gap-8 max-h-24">
 
   ![Desktop image](/img/cursa.png "Home page")
 
 </div>
 
-<div class="flex justify-between gap-8 max-h-24">
+<div className="flex justify-between gap-8 max-h-24">
 
   ![Desktop image](/img/cursa2.png "Home page")
 

@@ -1,9 +1,10 @@
 import Image from "next/image";
-import { getMDMetadata } from "../lib/readMd";
+import { getMDMetadata } from "../../lib/readMd";
 import Links from "./ui/Links";
 import LottieHome from "./ui/LottieHome";
 import Technologies from "./ui/Technologies";
 import Markdown from "markdown-to-jsx";
+import Cover from "./ui/Cover";
 
 
 
@@ -12,6 +13,7 @@ export default async function HomePage() {
 
   return (
     <section>
+      <Cover />
       <LottieHome />
 
       <Links />

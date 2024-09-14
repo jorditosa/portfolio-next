@@ -1,0 +1,15 @@
+.typewriter *::before {
+    z-index: 4010;
+    background: linear-gradient(#444 50%, #000 50%);
+    background-size: 100% 4px;
+    background-repeat: repeat-y;
+    opacity: .14;
+    box-shadow : inset 0px 0px 1px 1px rgba(0, 0, 0, .8);
+    animation: typing 5s linear infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }

@@ -10,7 +10,7 @@ I have to work with some important mobile permissions:
 - File system
 - Cookies ( Preferences on Capacitor )
 
-<div class="flex justify-between gap-8 max-h-24">
+<div className="flex justify-between gap-8 max-h-24">
 
   ![Mobile image](/img/mobile-cap.png "login page")
 

@@ -1,7 +1,7 @@
 'use client'
 
+import Heading from "@/components/Heading";
 import Markdown from "markdown-to-jsx";
-import Heading from "../../../../components/Heading"
 
 interface Props {
     content: any;

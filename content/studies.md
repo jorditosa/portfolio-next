@@ -1,7 +1,7 @@
 ## Online Cybersecurity Diploma in Networks and Systems
 ### Universitat Oberta de Catalunya
 
-<div class="w-10">
+<div className="w-10">
 
     ![logo UOC text](/img/logo_uoc.png)
 
@@ -16,7 +16,7 @@ This program provides extensive knowledge about cybersecurity in computer networ
 ## Web and App development
 ### Universitat Oberta de Catalunya
 
-<div class="w-10">
+<div className="w-10">
 
     ![logo UOC text](/img/logo_uoc.png)
 
@@ -31,7 +31,7 @@ Master applied to learn and focus to be able to build websites, from a frontend 
 ## Bussiness science diploma
 ### Universitat de Barcelona
 
-<div class="w-10">
+<div className="w-10">
 
     ![logo UOC text](/img/logo_ub.jpg)
 

@@ -1,8 +1,5 @@
 import { ReactNode } from "react"
-import { roboto } from '../app/fonts'
-import NavBar from "./ui/navbar/NavBar"
 import './globals.css'
-import Footer from "./ui/footer/Footer"
 import type { Metadata } from "next";
 
 interface LayoutProps {
@@ -17,14 +14,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps) {
 
   return (
-    <html lang="ca" className={roboto.style.fontFamily}>
-      <body className='font-orbitron  bg-slate-50 dark:bg-slate-950 text-slate-950 dark:text-slate-50'>
-        <NavBar />
-        <main className='px-4 md:p-0 max-w-4xl mx-auto prose dark:prose-invert'>
+    <html lang="ca" >
+      <body className="min-h-screen">
           {children}
-        </main>
-
-        <Footer />
       </body>
     </html>
   )

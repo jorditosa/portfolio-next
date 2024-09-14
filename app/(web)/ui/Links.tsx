@@ -1,12 +1,12 @@
+import RoundedNav from "@/components/RoundedNav";
 import { SiLinkedin, SiGithub, SiGmail } from "react-icons/si";
-import RoundedNav from '../../components/RoundedBox';
 
 
 const Links = () => {
   return (
 
-    <RoundedNav>
-      <ul className="p-0 list-none flex flex-col md:flex-row justify-evenly gap-2 md:gap-6">
+    <nav className="py-8">
+      <ul className="p-0 list-none flex flex-col md:flex-row justify-between gap-2 md:gap-6">
         <li className="flex items-center gap-4 hover:scale-105 duration-150 ease-in">
           <SiLinkedin className="w-8 h-8" />
           <a href="https://www.linkedin.com/in/jordi-s%C3%A1nchez-torras-2b658245/" target="_blank" rel="noopener noreferrer" className="no-underline">Linkedin profile</a>
@@ -22,7 +22,7 @@ const Links = () => {
       </ul>
 
 
-    </RoundedNav>
+    </nav>
   )
 }
 export default Links

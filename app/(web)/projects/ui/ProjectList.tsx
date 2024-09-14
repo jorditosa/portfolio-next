@@ -1,8 +1,8 @@
 'use client'
 
+import Heading from "@/components/Heading";
 import Link from "next/link";
 import { AiOutlineLaptop, AiOutlineMobile, AiOutlineCode, AiOutlineArrowRight } from "react-icons/ai";
-import Heading from "../../../components/Heading";
 import { TiChevronRightOutline } from "react-icons/ti";
 
 const webProjects = [

@@ -1,7 +1,7 @@
 "use client"
 
 import Lottie from "lottie-react";
-import developerAnimation from "../../public/loffties/developerAnimation.json";
+import developerAnimation from "../../../public/loffties/developerAnimation.json";
 
 const LottieHome = () => {
   return (
