@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Heading from "../../components/Heading"
 import { SiNetlify, SiAmazonec2, SiAmazonaws, SiAwslambda, SiJavascript, SiReact, SiNextdotjs, SiNodedotjs, SiHtml5, SiCss3, SiMysql, SiSass, SiIonic, SiTailwindcss, SiDocker, SiGit } from "react-icons/si";
 
@@ -19,6 +20,20 @@ const Technologies = () => {
         <SiMysql className="w-10 h-10" title="MySQL" />
         <SiDocker className="w-10 h-10" title="Docker" />
 
+      </div>
+
+
+      <Heading title={'Security technologies'} backBtn={false} />
+      <div className="flex flex-wrap items-center gap-4 mb-6">
+        <Image
+        src={'/icons/nmap.svg'}
+        width={50}
+        height={50}
+        className="w-10 h-10 m-0" 
+        alt="NMAP" 
+        title="NMAP"
+        />
+      
       </div>
 
       <Heading title={'Cloud technologies'} backBtn={false} />

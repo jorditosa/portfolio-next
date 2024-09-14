@@ -3,10 +3,16 @@ import { roboto } from '../app/fonts'
 import NavBar from "./ui/navbar/NavBar"
 import './globals.css'
 import Footer from "./ui/footer/Footer"
+import type { Metadata } from "next";
 
 interface LayoutProps {
   children: ReactNode
 }
+
+export const metadata: Metadata = {
+  title: "Welcome! Jordi's Portfolio",
+  description: "Personal portfolio from a passionate web developer",
+};
 
 export default function RootLayout({ children }: LayoutProps) {
 
