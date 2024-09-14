@@ -15,5 +15,6 @@ export const ubuntu = Ubuntu({
 export const fascinate = Fascinate_Inline({
   subsets: ['latin'],
   weight: '400',
-  style: 'normal'
+  style: 'normal',
+  display: 'swap',
 });

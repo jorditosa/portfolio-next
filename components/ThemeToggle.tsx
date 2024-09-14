@@ -32,6 +32,7 @@ const ThemeToggle = () => {
   return (
       <button
         onClick={() => setDarkMode(!darkMode)}
+        className='animate-pulse'
       >
         {
           darkMode ? <FaRegMoon size={30} title='dark' /> : <FaSun size={30} title='light' />

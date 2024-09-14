@@ -19,7 +19,7 @@ export default function WebLayout({ children }: LayoutProps) {
     return (
         <main className={`${roboto.className} font-orbitron dark:bg-slate-950 text-slate-950 dark:text-slate-50 leading-8`}>
             <NavBar />
-            <div className=" max-w-4xl mx-auto min-h-screen px-4">
+            <div className=" max-w-4xl mx-auto min-h-screen px-4 pt-20">
                 {children}
             </div>
 
