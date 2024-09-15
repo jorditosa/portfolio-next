@@ -44,7 +44,5 @@ Para correr el proyecto localmente, sigue los siguientes pasos:
     npm run dev
     ```
 
----
-
 ## Autor
-Desarrollado por Jordi Sánchez.
+Desarrollado por Jordi Sánchez. MIT Licence

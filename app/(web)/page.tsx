@@ -5,6 +5,7 @@ import LottieHome from "./ui/LottieHome";
 import Technologies from "./ui/Technologies";
 import Markdown from "markdown-to-jsx";
 import Cover from "./ui/Cover";
+import MouseEffect from "./ui/mouse/MouseEffect";
 
 
 
@@ -22,6 +23,8 @@ export default async function HomePage() {
       </Markdown>
 
       <Technologies />
+
+      <MouseEffect />
     </section>
   )
 }
