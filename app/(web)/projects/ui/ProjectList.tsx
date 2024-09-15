@@ -26,8 +26,8 @@ export default function ProjectList() {
                 <p>Here some web development projects, including client and server sides development.</p>
                 {webProjects.map(project => (
                     <li key={project.slug} className="text-xl flex items-center gap-4">
-                        <TiChevronRightOutline size={38} />
-                        <Link href={`/project/${project.slug}`} className="flex items-center gap-6 no-underline hover:text-blue-700">
+                        <TiChevronRightOutline size={30} />
+                        <Link href={`/project/${project.slug}`} className="flex items-center gap-6 no-underline hover:text-blue-600 transition-all duration-150 text-sm md:text-base">
                             {project.icon}
                             {project.name}
                         </Link>
@@ -43,8 +43,8 @@ export default function ProjectList() {
 
                 {scripts.map(script => (
                     <li key={script.slug} className="text-xl flex items-center gap-4">
-                        <TiChevronRightOutline size={38} />
-                        <Link href={`/project/${script.slug}`} className="flex items-center gap-6 no-underline hover:text-blue-700">
+                        <TiChevronRightOutline size={30} />
+                        <Link href={`/project/${script.slug}`} className="flex items-center gap-6 no-underline hover:text-blue-600 transition-all duration-150 text-sm md:text-base">
                             {script.icon}
                             {script.name}
                         </Link>

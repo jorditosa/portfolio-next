@@ -1,4 +1,7 @@
-# Takespai ecommerce website
+# Takespai ecommerce website.
+
+## [takespai.com](takespai.com)
+
 
 Dynamic ecommerce Website made with NextJS, creating the platform to order food and beverages.
 this job works with serveless option Strapi.
@@ -13,13 +16,9 @@ Technical points
 - private spaces
 
 
-<div className="flex justify-between gap-8 max-h-24">
+<div className="flex flex-col justify-between gap-8 max-h-24 my-2">
 
   ![Desktop image](/img/takespai.png "Home page")
-
-</div>
-
-<div className="flex justify-between gap-8 max-h-24">
 
   ![Desktop image](/img/takespai2.png "Home page")
 

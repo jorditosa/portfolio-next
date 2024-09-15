@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { roboto } from "@/app/fonts";
 import NavBar from "./ui/navbar/NavBar";
 import Footer from "./ui/footer/Footer";
+import SmoothScroll from "./ui/SmoothScroll";
 
 interface LayoutProps {
     children: ReactNode
@@ -18,6 +19,8 @@ export default function WebLayout({ children }: LayoutProps) {
 
     return (
         <main className={`${roboto.className} font-orbitron dark:bg-slate-950 text-slate-950 dark:text-slate-50 leading-8`}>
+            <SmoothScroll>
+
             <NavBar />
             <div className=" max-w-4xl mx-auto min-h-screen px-4 pt-20">
                 {children}
@@ -28,6 +31,8 @@ export default function WebLayout({ children }: LayoutProps) {
             */}
 
             <Footer />
+
+            </SmoothScroll>
 
         </main>
     )
