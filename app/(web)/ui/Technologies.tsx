@@ -1,5 +1,6 @@
 import Heading from "@/components/Heading";
-import { SiNetlify, SiAmazonec2, SiAmazonaws, SiAwslambda, SiJavascript, SiReact, SiNextdotjs, SiNodedotjs, SiHtml5, SiCss3, SiMysql, SiSass, SiIonic, SiTailwindcss, SiDocker, SiGit } from "react-icons/si";
+import { IoCube } from "react-icons/io5";
+import { SiNetlify, SiAmazonec2, SiAmazonaws, SiAwslambda, SiJavascript, SiReact, SiNextdotjs, SiNodedotjs, SiHtml5, SiCss3, SiMysql, SiSass, SiIonic, SiTailwindcss, SiDocker, SiGit, SiVirtualbox } from "react-icons/si";
 
 const Technologies = () => {
   return (
@@ -18,14 +19,21 @@ const Technologies = () => {
         <SiGit className="w-10 h-10" title="Git" />
         <SiMysql className="w-10 h-10" title="MySQL" />
         <SiDocker className="w-10 h-10" title="Docker" />
+      </div>
 
+      <Heading title={'Sec technologies'} backBtn={false} />
+      <div className="flex flex-wrap items-center gap-4 mb-6">
+        <SiVirtualbox className="w-10 h-10" title="VirtualBox" />
+        {/* <SiMetasploit className="w-10 h-10" title="Metasploit" /> */}
+        {/* <SiSnort className="w-10 h-10" title="Snort" /> */}
       </div>
 
       <Heading title={'Cloud technologies'} backBtn={false} />
       <div className="flex flex-wrap items-center gap-4 mb-6">
         <SiAmazonaws className="w-10 h-10" title="AWS" />
         <SiAmazonec2 className="w-10 h-10" title="EC2" />
-        <SiAwslambda className="w-10 h-10" title="Lambda" />
+        <IoCube className="w-10 h-10" title="Lightsail" />
+        {/* <SiHostinger className="w-10 h-10" title="Hostinger" /> */}
         <SiNetlify className="w-10 h-10" title="Netlify" />
       </div>
 
