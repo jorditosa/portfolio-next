@@ -1,6 +1,7 @@
 'use client'
 
 import Heading from "@/components/Heading";
+import FadeUpAnimation from "@/components/animations/fade-up/FadeUpAnimation";
 import Link from "next/link";
 import { AiOutlineLaptop, AiOutlineMobile, AiOutlineCode, AiOutlineArrowRight } from "react-icons/ai";
 import { TiChevronRightOutline } from "react-icons/ti";
@@ -21,36 +22,38 @@ export default function ProjectList() {
 
     return (
         <>
-            <ul className="p-0">
-                <Heading title="Fullstack Apps" backBtn={false} />
-                <p>Here some web development projects, including client and server sides development.</p>
-                {webProjects.map(project => (
-                    <li key={project.slug} className="text-xl flex items-center gap-4">
-                        <TiChevronRightOutline size={30} />
-                        <Link href={`/project/${project.slug}`} className="flex items-center gap-6 no-underline hover:text-blue-600 transition-all duration-150 text-sm md:text-base">
-                            {project.icon}
-                            {project.name}
-                        </Link>
-                    </li>
-                ))}
+            <FadeUpAnimation>
+                <ul className="p-0">
+                    <Heading title="Fullstack Apps" backBtn={false} />
+                    <p>Here some web development projects, including client and server sides development.</p>
+                    {webProjects.map(project => (
+                        <li key={project.slug} className="text-xl flex items-center gap-4">
+                            <TiChevronRightOutline size={30} />
+                            <Link href={`/project/${project.slug}`} className="flex items-center gap-6 no-underline hover:text-blue-600 transition-all duration-150 text-sm md:text-base">
+                                {project.icon}
+                                {project.name}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </FadeUpAnimation>
 
-            </ul>
+            <FadeUpAnimation>
+                <ul className="p-0">
+                    <Heading title="Personal Scripts" backBtn={false} />
+                    <p>Here you are some scripts, based on class and functions, developed with python and proper conda environments.</p>
 
-            <ul className="p-0">
-                <Heading title="Personal Scripts" backBtn={false} />
-                <p>Here you are some scripts, based on class and functions, developed with python and proper conda environments.</p>
-
-
-                {scripts.map(script => (
-                    <li key={script.slug} className="text-xl flex items-center gap-4">
-                        <TiChevronRightOutline size={30} />
-                        <Link href={`/project/${script.slug}`} className="flex items-center gap-6 no-underline hover:text-blue-600 transition-all duration-150 text-sm md:text-base">
-                            {script.icon}
-                            {script.name}
-                        </Link>
-                    </li>
-                ))}
-            </ul>
+                    {scripts.map(script => (
+                        <li key={script.slug} className="text-xl flex items-center gap-4">
+                            <TiChevronRightOutline size={30} />
+                            <Link href={`/project/${script.slug}`} className="flex items-center gap-6 no-underline hover:text-blue-600 transition-all duration-150 text-sm md:text-base">
+                                {script.icon}
+                                {script.name}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </FadeUpAnimation>
         </>
     )
 }

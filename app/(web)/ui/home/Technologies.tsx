@@ -1,5 +1,5 @@
 import Heading from "@/components/Heading";
-import FadeUpAnimation from "@/components/animations/FadeUpAnimation";
+import FadeUpAnimation from "@/components/animations/fade-up/FadeUpAnimation";
 import { IoCube } from "react-icons/io5";
 import { SiNetlify, SiAmazonec2, SiAmazonaws, SiAwslambda, SiJavascript, SiReact, SiNextdotjs, SiNodedotjs, SiHtml5, SiCss3, SiMysql, SiSass, SiIonic, SiTailwindcss, SiDocker, SiGit, SiVirtualbox } from "react-icons/si";
 

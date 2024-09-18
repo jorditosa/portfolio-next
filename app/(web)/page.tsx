@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { getMDMetadata } from "../../lib/readMd";
-import Links from "./ui/Links";
-import LottieHome from "./ui/LottieHome";
-import Technologies from "./ui/Technologies";
+import Links from "./ui/home/Links";
+import LottieHome from "./ui/home/LottieHome";
+import Technologies from "./ui/home/Technologies";
 import Markdown from "markdown-to-jsx";
-import Cover from "./ui/Cover";
 import MouseEffect from "./ui/mouse/MouseEffect";
 import HomeBody from "./ui/home/HomeBody";
+import Cover from "./ui/home/Cover";
 
 
 

@@ -1,0 +1,14 @@
+.fadeLateral {
+    animation: fadeLateralAnimation 3s ease forwards;
+}
+
+@keyframes fadeLateralAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

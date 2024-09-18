@@ -1,6 +1,7 @@
 'use client'
 
 import Heading from "@/components/Heading";
+import FadeUpAnimation from "@/components/animations/fade-up/FadeUpAnimation";
 import Markdown from "markdown-to-jsx";
 
 interface Props {
@@ -11,11 +12,11 @@ interface Props {
 
 export default function Project({content, slug} : Props) {
     return (
-        <section>
-        <Heading title={`Project ${slug}`} backBtn={true} />
-        <Markdown>
-            {content}
-        </Markdown>
-      </section>
+        <FadeUpAnimation>
+            <Heading title={`Project ${slug}`} backBtn={true} />
+            <Markdown>
+                {content}
+            </Markdown>
+      </FadeUpAnimation>
     )
 }

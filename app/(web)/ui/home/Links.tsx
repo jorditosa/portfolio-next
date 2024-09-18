@@ -1,5 +1,5 @@
 import RoundedNav from "@/components/RoundedNav";
-import FadeUpAnimation from "@/components/animations/FadeUpAnimation";
+import FadeUpAnimation from "@/components/animations/fade-up/FadeUpAnimation";
 import { SiLinkedin, SiGithub, SiGmail } from "react-icons/si";
 
 

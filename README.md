@@ -14,6 +14,7 @@ El proyecto está desarrollado con las siguientes tecnologías clave:
 - **Lottie-react**: Para la integración de animaciones Lottie en React.
 - **Markdown-to-JSX** y **Marked**: Convierte contenido en Markdown a JSX para un mejor manejo del texto.
 - **React Icons**: Biblioteca para utilizar iconos populares de forma rápida.
+- **Javascript IntersectionObserver**: API de Javascript para controlar renderizado de los elementos en el viewport, genial para utilizar y crear animaciones personalizadas con el scrolling del usuario/a.
 
 ## Scripts disponibles
 
