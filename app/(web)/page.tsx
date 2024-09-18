@@ -6,6 +6,7 @@ import Technologies from "./ui/Technologies";
 import Markdown from "markdown-to-jsx";
 import Cover from "./ui/Cover";
 import MouseEffect from "./ui/mouse/MouseEffect";
+import HomeBody from "./ui/home/HomeBody";
 
 
 
@@ -18,9 +19,7 @@ export default async function HomePage() {
 
       <Links />
 
-      <Markdown>
-        {content}
-      </Markdown>
+      <HomeBody content={content} />
 
       <Technologies />
 
