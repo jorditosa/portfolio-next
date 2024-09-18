@@ -24,13 +24,6 @@ const Technologies = () => {
           <SiDocker className="w-10 h-10" title="Docker" />
         </div>
 
-        <Heading title={'Sec technologies'} backBtn={false} />
-        <div className="flex flex-wrap items-center gap-4 mb-6">
-          <SiVirtualbox className="w-10 h-10" title="VirtualBox" />
-          {/* <SiMetasploit className="w-10 h-10" title="Metasploit" /> */}
-          {/* <SiSnort className="w-10 h-10" title="Snort" /> */}
-        </div>
-
         <Heading title={'Cloud technologies'} backBtn={false} />
         <div className="flex flex-wrap items-center gap-4 mb-6">
           <SiAmazonaws className="w-10 h-10" title="AWS" />

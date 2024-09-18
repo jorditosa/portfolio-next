@@ -2,18 +2,21 @@
 
 import Heading from "@/components/Heading";
 import TypeWriter from "@/components/TypeWritter"
+import Markdown from "markdown-to-jsx";
 
-export default function SecretHeaderPage() {
+export default function SecretHeaderPage({content}) {
     return (
         <>
         <Heading title='Security career' backBtn={true} color="bg-emerald-400" />
-        <TypeWriter delay={500}>
-            <h1 className="text-2xl font-bold">Hi!</h1>
-        </TypeWriter>
-        <TypeWriter delay={1000}>
-            <p>Willing to grow as a blue team member.</p>
-        </TypeWriter>
-
+        <Markdown
+            options={{ 
+            overrides: {
+                TypeWriter: {
+                    component: TypeWriter
+                }
+            } }}>
+            {content}
+        </Markdown>
         </>
     );
 }
