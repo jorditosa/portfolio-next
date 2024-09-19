@@ -23,7 +23,7 @@ export default function MouseEffect() {
     return (
         <>
         <div className="h-full">
-          <div className="ball bg-gradient-to-r from-blue-400 via-blue-800 to-slate-900 w-10 h-10 fixed top-0 left-0 rounded-full"></div>
+          <div className="ball bg-transparent border-2 border-blue-800 w-10 h-10 fixed top-0 left-0 rounded-full"></div>
         </div>
       </>
     );

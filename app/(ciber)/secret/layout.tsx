@@ -15,9 +15,9 @@ export const metadata: Metadata = {
 export default function CiberLayout({ children }: LayoutProps) {
 
   return (
-      <main className={`${ubuntu.style.fontFamily} font-orbitron bg-red-950 text-emerald-400 min-h-screen`}>
+      <main className={`${ubuntu.style.fontFamily} font-orbitron bg-stone-950 text-emerald-400 min-h-screen`}>
 
-        <div className="max-w-4xl mx-auto py-10">
+        <div className="max-w-4xl mx-auto py-10 px-4">
           {children}
         </div>
 

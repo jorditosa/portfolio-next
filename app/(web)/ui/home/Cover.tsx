@@ -8,6 +8,7 @@ import loading from "../../../../public/loffties/loading.json";
 import FadeUpAnimation from "@/components/animations/fade-up/FadeUpAnimation";
 import FadeLateralAnimation from "@/components/animations/fade-lateral/FadeLateralAnimation";
 import LottieHome from "./LottieHome";
+import { TerminalCover } from "../terminal/TerminalCover";
 
 
 export default function Cover() {
@@ -39,7 +40,8 @@ export default function Cover() {
                         </div>
 
                         <FadeLateralAnimation>
-                            <LottieHome />
+                            <TerminalCover />
+                            {/* <LottieHome /> */}
                         </FadeLateralAnimation>
                     </div>
 
