@@ -1,5 +1,5 @@
 .fadeUp {
-    animation: fadeUpAnimation 3s ease forwards;
+    animation: fadeUpAnimation 2s ease-in-out forwards;
 }
 
 @keyframes fadeUpAnimation {

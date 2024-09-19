@@ -18,7 +18,7 @@ function Template({ children }: { children: React.ReactNode }) {
 
     return (
         <div>
-            <div id="banner" className='w-screen min-h-screen bg-gradient-to-t from-blue-900 via-blue-700 to-neutral-900 z-50 fixed top-0 left-0 flex justify-center items-center'>
+            <div id="banner" className='w-screen min-h-screen bg-gradient-to-b from-blue-900 via-slate-900 to-slate-900 z-50 fixed top-0 left-0 flex justify-center items-center'>
                 <div className="flex justify-center">
                     <Lottie animationData={loading} style={{ width: "320px" }} loop />
                 </div>

@@ -1,5 +1,5 @@
 .fadeLateral {
-    animation: fadeLateralAnimation 3s ease forwards;
+    animation: fadeLateralAnimation 2s ease-in-out forwards;
 }
 
 @keyframes fadeLateralAnimation {
