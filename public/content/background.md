@@ -1,6 +1,6 @@
 ## Netquest Soluciones Tecnológicas SL
 
-**2023 - current**
+**2022 - current**
 
 As a junior software developer, my work mainly involves the frontend of the web portal and the resolution of support tickets involving some bugs, emails, landings and other internal issues.
 Also, working on **AWS** to control of buckets and pipelines needed in my everyday job.
