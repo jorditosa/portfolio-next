@@ -21,4 +21,4 @@ As an **IT recruiter**, my profession involved searching, interviewing, and recr
 
 **2016 - 2016**
 
-As an HR recruiter, I was in charge to find, interview and selec different kinds of professionals as every projects demands. We had from high profiles to common ones.
+As an HR recruiter, I was in charge to find, interview and select different kinds of professionals as every projects demands. We had from high profiles to common ones.

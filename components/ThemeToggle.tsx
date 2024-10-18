@@ -1,43 +1,36 @@
 "use client"
-import { usePathname, useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+
+import useUIStore from '@/store/ui-store';
+import React from 'react';
 import { FaRegMoon, FaSun } from "react-icons/fa";
 
 const ThemeToggle = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(true)
-  const { replace } = useRouter();
-  const pathname = usePathname();
+  const { theme, setTheme } = useUIStore();
 
-
-
-  useEffect(() => {
-    const theme = localStorage.getItem("theme");
-    if (theme === "dark") setDarkMode(true);
-    replace(`${pathname}?theme=${theme}`)
-  }, [])
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-      replace(`${pathname}?theme=dark`)
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark');
+      document.documentElement.classList.add('dark')
     } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light")
-      replace(`${pathname}?theme=light`)
-
+      setTheme('light');
+      document.documentElement.classList.remove('dark')
     }
-  }, [darkMode])
+  };
+
 
   return (
+    <div className='absolute h-full w-full flex flex-col items-center justify-center gap-8'>
+      <p className='-rotate-6'>Theme</p>
       <button
-        onClick={() => setDarkMode(!darkMode)}
-        className='animate-pulse'
+        onClick={toggleTheme}
+        className='w-full h-12 flex justify-center items-center relative'
       >
         {
-          darkMode ? <FaRegMoon size={30} title='dark' /> : <FaSun size={30} title='light' />
+          theme === 'light' ? <FaRegMoon size={30} title='dark' /> : <FaSun size={30} title='light' />
         }
       </button>
+    </div>
+
   )
 }
 export default ThemeToggle

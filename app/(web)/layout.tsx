@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function WebLayout({ children }: LayoutProps) {
 
     return (
-        <main className={`${roboto.className} font-orbitron dark:bg-slate-900 text-slate-950 dark:text-slate-50 leading-8`}>
+        <main className={`${roboto.className} font-orbitron bg-slate-200 dark:bg-slate-900 text-slate-950 dark:text-slate-50 leading-8`}>
             <SmoothScroll>
 
             <NavBar />

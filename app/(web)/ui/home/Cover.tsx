@@ -35,7 +35,7 @@ export default function Cover() {
 
                         <div className="flex justify-center items-center">
                             <FadeUpAnimation>
-                                <h2 className={`${fascinate.className} text-center text-5xl md:text-8xl text-slate-950 dark:text-white font-orbitron font-bold drop-shadow-2xl shadow-blue-500 hover:animation-pulse transition-all duration-[6s] leading-[60px] md:leading-[160px]`}>Web developer and blue teamer</h2>
+                                <h2 className={`${fascinate.className} text-center text-4xl md:text-7xl text-slate-950 dark:text-white font-orbitron font-bold drop-shadow-2xl shadow-blue-500 hover:animation-pulse transition-all duration-[6s] leading-[60px] md:leading-[160px]`}>Web developer <br/> Cybersecurity <br/> Hybrid Apps</h2>
                             </FadeUpAnimation>
                         </div>
 
